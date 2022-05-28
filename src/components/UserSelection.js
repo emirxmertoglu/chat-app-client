@@ -8,7 +8,7 @@ const UserSelection = () => {
     if (!name) {
       alert("Please enter your name");
     } else {
-      const socket = io("http://localhost:3000");
+      const socket = io("https://emir-chat-app-server.herokuapp.com/");
       socket.emit("new-user", name);
     }
   };
